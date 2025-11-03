@@ -53,7 +53,7 @@ img, svg { max-width: 100%; height: auto; }
   padding: 12px 0;
 }
 .brand { display: inline-flex; align-items: center; gap: 10px; }
-.brand-name { font-weight: 700; color: var(--white); }
+.brand-name { font-weight: 700; color: var(--white); font-size: 4rem; line-height: 1; }
 .emblem { display: inline-block; }
 
 .main-nav ul {
