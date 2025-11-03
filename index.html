@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Single-Page Civic Template</title>
+    <meta name="description" content="Neutral, accessible single-page site template." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <div class="brand" aria-label="Organization logo and name">
+          <!-- Placeholder emblem (stylized eagle) as inline SVG, decorative -->
+          <svg class="emblem" width="40" height="40" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <path fill="#D4AF37" d="M32 6c5 8 11 10 20 10-4 5-9 8-14 9 6 2 11 6 14 12-8-2-14-2-20 2-6-4-12-4-20-2 3-6 8-10 14-12-5-1-10-4-14-9 9 0 15-2 20-10z"/>
+            <circle cx="32" cy="32" r="2" fill="#003300"/>
+          </svg>
+          <span class="brand-name">Organization Name</span>
+        </div>
+        <nav class="main-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#platform">Platform</a></li>
+            <li><a href="#join">Join Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <!-- Hero -->
+      <section id="hero" class="hero" aria-labelledby="hero-heading">
+        <div class="container hero-inner">
+          <div class="hero-graphic" role="img" aria-label="Stylized eagle emblem in gold">
+            <svg width="160" height="160" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="g" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#D4AF37"/>
+                  <stop offset="100%" stop-color="#b28c27"/>
+                </linearGradient>
+              </defs>
+              <path fill="url(#g)" d="M32 6c5 8 11 10 20 10-4 5-9 8-14 9 6 2 11 6 14 12-8-2-14-2-20 2-6-4-12-4-20-2 3-6 8-10 14-12-5-1-10-4-14-9 9 0 15-2 20-10z"/>
+              <circle cx="32" cy="32" r="2" fill="#003300"/>
+            </svg>
+          </div>
+          <div class="hero-copy">
+            <h1 id="hero-heading">Beyond Left and Right: A New Path for the Nation</h1>
+            <p class="tagline">A neutral civic template you can adapt for your organization.</p>
+            <p>
+              <a class="btn btn-primary" href="#about" aria-describedby="hero-heading">Learn More</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section" aria-labelledby="about-heading">
+        <div class="container">
+          <h2 id="about-heading">About</h2>
+          <div class="about-grid">
+            <p>
+              This single-page site is a neutral, factual template. It is designed to explain a movement or organization’s high‑level ideas without advocating harm or hostility. Replace this text with your own historically accurate and non‑inciting description.
+            </p>
+            <p>
+              You might summarize guiding principles, outline positions regarding civic structures, or provide context on how your group differentiates itself from conventional categories. Keep the tone informational and avoid rhetoric.
+            </p>
+            <p>
+              Many organizations discuss topics like community stewardship, local revitalization, and environmental care. If you address globalization, national policy, or cultural questions, present them in measured, verifiable terms.
+            </p>
+            <p>
+              Ensure content respects human rights norms and eschews any calls to violence or hate. Provide citations where relevant, and focus on practical, peaceful civic participation within the law.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Platform -->
+      <section id="platform" class="section" aria-labelledby="platform-heading">
+        <div class="container">
+          <h2 id="platform-heading">Platform</h2>
+          <div class="card-grid" role="list">
+            <article class="card" role="listitem" aria-labelledby="card1-title">
+              <div class="card-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24"><path fill="#D4AF37" d="M12 2l3 6 6 .9-4.5 4.4 1 6.2L12 17l-5.5 2.5 1-6.2L3 8.9 9 8z"/></svg>
+              </div>
+              <h3 id="card1-title">Economic Model</h3>
+              <p>Describe a balanced, community‑centered approach to ownership and opportunity, avoiding harm or discrimination.</p>
+            </article>
+            <article class="card" role="listitem" aria-labelledby="card2-title">
+              <div class="card-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24"><path fill="#D4AF37" d="M12 3a9 9 0 100 18 9 9 0 000-18m1 4v5l4 2"/></svg>
+              </div>
+              <h3 id="card2-title">National Policy</h3>
+              <p>Outline lawful self‑determination, civic participation, and respect for democratic processes.</p>
+            </article>
+            <article class="card" role="listitem" aria-labelledby="card3-title">
+              <div class="card-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24"><path fill="#D4AF37" d="M12 2a10 10 0 100 20A10 10 0 0012 2Zm1 5h-2v6h6v-2h-4V7Z"/></svg>
+              </div>
+              <h3 id="card3-title">Cultural Renewal</h3>
+              <p>Emphasize education, arts, and civic service to strengthen shared, peaceful community life.</p>
+            </article>
+            <article class="card" role="listitem" aria-labelledby="card4-title">
+              <div class="card-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24"><path fill="#D4AF37" d="M12 5a7 7 0 017 7H5a7 7 0 017-7Zm-7 9h14a7 7 0 01-14 0Z"/></svg>
+              </div>
+              <h3 id="card4-title">Community Relations</h3>
+              <p>Commit to lawful, non‑violent engagement and equal dignity, rejecting hate and hostility.</p>
+            </article>
+            <article class="card" role="listitem" aria-labelledby="card5-title">
+              <div class="card-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24"><path fill="#D4AF37" d="M12 2l4 8 8 1-6 6 2 9-8-4-8 4 2-9-6-6 8-1z"/></svg>
+              </div>
+              <h3 id="card5-title">Foreign Policy</h3>
+              <p>State positions on sovereignty and peace, prioritizing diplomacy and international law.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Join Us -->
+      <section id="join" class="section" aria-labelledby="join-heading">
+        <div class="container">
+          <h2 id="join-heading">Join Us</h2>
+          <form id="contact-form" novalidate aria-describedby="join-desc">
+            <p id="join-desc">Use this form to send a message. No data is stored on a server.</p>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required aria-required="true" />
+                <span class="error" id="name-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required aria-required="true" />
+                <span class="error" id="email-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-field form-field--full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                <span class="error" id="message-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+            <p class="form-success" id="form-success" role="status" aria-live="polite" hidden>Thanks! Your message was validated locally.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div>
+          <h3 class="footer-heading">Connect</h3>
+          <ul class="social" aria-label="Social links">
+            <li><a href="#" aria-label="Visit our page on X">X</a></li>
+            <li><a href="#" aria-label="Visit our page on Facebook">Facebook</a></li>
+            <li><a href="#" aria-label="Visit our page on YouTube">YouTube</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Disclaimer</h3>
+          <p>Template for neutral, informational purposes. Replace with your lawful, non‑violent content.</p>
+        </div>
+        <div class="copyright">© <span id="year"></span> Organization Name</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
